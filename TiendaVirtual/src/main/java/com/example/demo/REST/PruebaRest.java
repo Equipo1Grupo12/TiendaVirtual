@@ -11,10 +11,11 @@ import org.springframework.web.bind.annotation.PutMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 
+import com.example.demo.modelo.Usuario;
+import com.example.demo.modelo.UsuarioDAO;
+
 import java.util.List;
 import java.util.Optional;
-import com.example.demo.modelo.Dao;
-import com.example.demo.modelo.Usuario;
 
 
 
@@ -23,7 +24,7 @@ import com.example.demo.modelo.Usuario;
 public class PruebaRest {
 	 
 	@Autowired
-	private Dao dao;
+	private UsuarioDAO dao;
 	
 	
 	@GetMapping("/listar")
@@ -57,7 +58,7 @@ public class PruebaRest {
 	}
 	
 	
-	@PutMapping
+	/*@PutMapping
 	public ResponseEntity<Usuario> updateUsuario(@RequestBody Usuario u){
 		Optional<Usuario> ou = dao.findById(u.getCedula());
 		if (ou.isPresent()) {
@@ -68,7 +69,7 @@ public class PruebaRest {
 		}else {
 			return ResponseEntity.notFound().build();
 		}
-	}
+	}*/
 	
 
 }

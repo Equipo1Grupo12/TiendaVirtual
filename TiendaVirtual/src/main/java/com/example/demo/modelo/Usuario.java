@@ -12,12 +12,13 @@ import javax.persistence.Table;
 @Table(name="usuarios")
 public class Usuario {
 	
+	/*@Id
 	@Column(name="id")
-	@GeneratedValue(strategy = GenerationType.IDENTITY)
-	private Long id;
+	@GeneratedValue(strategy=GenerationType.IDENTITY)
+	private Long id;*/
 	
 	@Id
-	@Column(name="cedula", length = 50)
+	@Column(name="cedula")
 	private int cedula;
 	
 	@Column(name="email_usuario",length = 50)
