@@ -22,7 +22,7 @@
 					<td class="botonControl"><a href="reportes" target="marcoUsuarios" class="linkControl">Reportes</a></td> 
 				</tr>				
 			</table>
-			<iframe name="marcoUsuarios" class="frameControl"></iframe>
+			<iframe name="marcoUsuarios" class="frameControl" ></iframe>
 		</div>
 	</section>
 </body>
