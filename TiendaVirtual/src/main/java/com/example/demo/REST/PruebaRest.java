@@ -18,7 +18,6 @@ import java.util.List;
 import java.util.Optional;
 
 
-
 @Controller
 @RequestMapping("app")
 public class PruebaRest {
@@ -47,7 +46,6 @@ public class PruebaRest {
 	public ResponseEntity<Usuario> insertUsuario(@RequestBody Usuario u){
 		Usuario aux =dao.save(u);
 		return ResponseEntity.ok(aux);
-		
 	}
 	
 	@DeleteMapping(value = "{cc}")

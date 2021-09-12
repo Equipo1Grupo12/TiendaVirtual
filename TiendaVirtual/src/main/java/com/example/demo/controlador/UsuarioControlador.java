@@ -26,6 +26,10 @@ public class UsuarioControlador {
 	@Autowired
 	private UsuarioDAO usuariosDAO; 
 	
+	@GetMapping()
+	public void UsuariosPage(){
+	}
+	
 	@GetMapping("/listar")
 	public ResponseEntity<List<Usuario>> getUsuarios(){
 		List<Usuario> usuarios = usuariosDAO.findAll();
