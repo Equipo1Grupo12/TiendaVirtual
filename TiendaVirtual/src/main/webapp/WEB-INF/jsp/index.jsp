@@ -1,55 +1,29 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
 <meta charset="UTF-8">
 <title>Tienda Generica</title>
-	<link rel="shortcut icon" type="image/png" href="recursos/iconBot.png">
-	
-	<link rel="stylesheet" href="css/navStyle.css">
-	<link rel="stylesheet" href="css/loginStyle.css">
-	<link href="bootstrap.min.css" rel="stylesheet">
-	<link href="css/bootstrap.min.css" rel="stylesheet">
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
-  
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-
+<link href="css/estilos.css" rel="stylesheet">
 </head>
-
-<body> 
- 
- <div class="navbar">
-  <a class="active" href="#"><i class="fa fa-fw fa-user"></i> Login</a>
-  <a href="#"><i class="fa fa-fw fa-envelope"></i> Contacto</a> 
-  
-</div>
-
- ${alerta}
- 
- <div class="login-box ">
-      <div align="center"><img src="recursos/J.gif" class="avatar" alt="Avatar Image" width="30%"></div>
-      <h1 align="center">INICIO DE SESION</h1>
-      <br>
-      
-      <form action="index" method="post">
-
-	       <!-- USERNAME INPUT -->
-	       <label for="user">Usuario</label>
-	       <input  type="text" name="user">
-	       <!-- PASSWORD INPUT -->
-	       <label for="contraseña">Contraseña</label>
-	       <input  type="password" name="pass" >
-	       <div class="form-group"></div>
-	       <br>
-	       
-	       <input type="submit" value="Ingresar">
-	       <a href="#olvido">Olvido su contraseña?</a><br>
-	       <!--a href=Registro.php>No tiene una cuenta?</a´-->
-	       
-      </form>
-    </div>
-   
+<body class="bodyIndex">
+	<section class="sectionIndex">
+		<form class="divIndex" method="post" action="index">
+			<table class="tableIndex">
+				<caption class="tituloIndex">Tienda Genérica</caption>
+				<tr>
+					<td><label class="labelIndex" for="user">Usuario</label> </td>
+					<td><input type="text" class="inputIndex" name="user" id="usuario"> </td>
+				</tr>
+				<tr>
+					<td><label class="labelIndex" for="password">Contraseña</label> </td>
+					<td><input type="password" class="inputIndex" name="pass" id="password"> </td>
+				</tr>
+			</table>
+			<br>
+			<input type="submit" value="Aceptar" class="aceptarIndex" name="boton">			
+		</form>
+	</section>
 </body>
 </html>

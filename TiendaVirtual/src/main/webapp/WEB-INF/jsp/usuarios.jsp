@@ -1,72 +1,42 @@
-<%@ page language="java" contentType="text/html; charset=ISO-8859-1"
-    pageEncoding="ISO-8859-1"%>
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8"%>
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-<meta charset="ISO-8859-1">
-<title>Tienda Generica</title>
-<link rel="shortcut icon" type="image/png" href="recursos/iconBot.png">
-<link rel="stylesheet" href="../css/navStyle.css">
-<link rel="stylesheet" href="../css/RegisterStyle.css">
-<link href="css/bootstrap.min.css" rel="stylesheet">
-
-
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-  
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<link href="css/estilos.css" rel="stylesheet">
 </head>
-<body>
-
-<div class="navbar">
-  <a  href=menu ><i class="fa fa-fw fa-home"></i>Inicio</a> 
-  <a class="active" href=usuarios><i class="fa fa-fw fa-users"></i> Usuarios </a> 
-  <a href=clientes><i class="fa fa-fw fa-suitcase"></i> Clientes</a> 
-  <a href=proveedores><i class="fa fa-fw fa-truck"></i> Proveedores</a> 
-  <a href=productos><i class="fa fa-fw fa-cubes"></i> Productos</a>
-  <a href=ventas><i class="fa fa-fw fa-clipboard"></i> Ventas</a>
-  <a href=reportes><i class="fa fa-fw fa-file-text-o"></i> Reportes</a>   
-  <li style="float:right" ><a> <i class="fa fa-fw fa-user"></i>${user}</a></li>
-</div>
-<div class="form-group" >
-<form>
-  <div class="form-row">
-    <div class="form-group col-md-6">
-      <label  for="inputEmail4">Cedula:</label>
-      <input type="text" class="form-control" id="inputEmail4" placeholder="Cedula">
-    </div>
-    <div class="form-group col-md-6">
-      <label for="inputPassword4">Usuario:</label>
-      <input type="text" class="form-control" id="inputPassword4" placeholder="Usuario">
-    </div>
-  </div>
-  <div class="form-row">
-    <div class="form-group col-md-6">
-      <label for="inputCity">Nombre Completo:</label>
-      <input type="text" class="form-control" id="inputCity" placeholder="Nombre Completo">
-    </div>
-    <div class="form-group col-md-6">
-      <label for="inputState">Contraseña:</label>
-      <input type="password" class="form-control" id="inputCity" placeholder="Contraseña">
-      <br>
-    </div>
-  </div>
-  <div class="form-group col-md-12">
-      <label for="inputState">Correo Electronico:</label>
-      <input type="email" class="form-control" id="inputCity" placeholder="Correo Electronico">
-      <br>
-    </div>
-    
-    <div class="form-inline" align="center">
-    <button type="submit" class="btn btn-primary">Consultar</button>
-    <button type="submit" class="btn btn-primary">Crear</button>
-    <button type="submit" class="btn btn-primary">Actualizar</button>
-    <button type="submit" class="btn btn-primary">Borrar</button>
-    </div>
-    
-</form>
-
-</div>
-										
-
+<body class="bodyUsuarios">
+	<section class="sectionUsuarios">
+		<form class="divUsuarios" method="post" action="./tv_servlet">
+			<table class="camposUsuarios">
+				<tr>
+					<td><label class="labelUsuarios" for="cedula">CÃ©dula</label> </td>
+					<td><input type="text" class="datoUsuarios" id="cedula"></td>
+					<td><label class="labelUsuarios" for="usuario">Usuario</label> </td>
+					<td><input type="text" class="datoUsuarios" id="usuario"></td>
+				</tr>
+				<tr>
+					<td><label class="labelUsuarios" for="nombre">Nombre Completo</label> </td>
+					<td><input type="text" class="datoUsuarios" id="nombre"></td>
+					<td><label class="labelUsuarios" for="password">ContraseÃ±a</label> </td>
+					<td><input type="text" class="datoUsuarios" id="password"></td>
+				</tr>
+				<tr>
+					<td><label class="labelUsuarios" for="correo">Correo ElectrÃ³nico</label> </td>
+					<td><input type="text" class="datoUsuarios" id="correo"></td>
+				</tr>
+			</table>
+			<table>
+				<tr>
+					<td><input type="submit" value="Consultar" class="botonUsuarios"></td>
+					<td><input type="submit" value="Crear" class="botonUsuarios"></td>
+					<td><input type="submit" value="Actualizar" class="botonUsuarios"></td>
+					<td><input type="submit" value="Borrar" class="botonUsuarios"></td>
+				</tr>
+			</table>
+		</form>
+	</section>	
 </body>
 </html>
