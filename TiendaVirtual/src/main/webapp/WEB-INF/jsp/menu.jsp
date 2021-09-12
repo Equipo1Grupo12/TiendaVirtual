@@ -1,10 +1,10 @@
-<%@ page language="java" contentType="text/html; charset=ISO-8859-1"
-    pageEncoding="ISO-8859-1"%>
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8"%>
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="ISO-8859-1">
-<title>Tienda Generica</title>
+<meta charset="UTF-8">
+<title>Tienda Genérica</title>
 <link href="css/estilos.css" rel="stylesheet">
 </head>
 <body class="bodyControl">
@@ -12,7 +12,7 @@
 		<br>
 		<div  class="divControl">
 			<table  class="tableControl">
-				<caption class="tituloControl">Tienda Gen�rica</caption>
+				<caption class="tituloControl">Tienda Genérica</caption>
 				<tr>
 					<td class="botonControl"><a href="usuarios" target="marcoUsuarios" class="linkControl">Usuarios</a></td>
 					<td class="botonControl"><a href="clientes" target="marcoUsuarios" class="linkControl">Clientes</a></td>

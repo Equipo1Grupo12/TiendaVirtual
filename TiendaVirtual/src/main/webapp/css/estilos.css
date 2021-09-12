@@ -3,7 +3,7 @@
 	margin: 0;
 }
 .bodyIndex{
-	background: url("../imagenes/fondoIndex.jpeg") no-repeat center top;
+	background: url("../recursos/fondoIndex.jpeg") no-repeat center top;
 	background-size:cover;
 }
 .sectionIndex {
@@ -30,50 +30,56 @@
 	height: 90%;
 }
 .tituloIndex{
-	font-size: 7vw;
-	background: rgb(192, 185, 221);
+	font-size: 5vw;
+	color: rgb(3, 56, 96);
+	/*background: rgb(192, 185, 221);*/
 	text-align: center;
 }
+::placeholder {
+  font-style: italic;
+}
 .labelIndex{
-	font-size: 4vw;
+	font-size: 3vw;
 	margin: 1vw 0;
 }
 .inputIndex{
-	font-size: 3vw;
-	padding: 1vw;
-	margin: 1vw 0;
-	background: rgba(192, 185, 221,.5);
+	font-size: 1vw;
+	margin: 1.5vw;
+	padding: 1.5vw;
+	/*padding: rgb(80, 168, 239) 0;
+	background: rgba(192, 185, 221,.5);*/
 	border: none;
 	border-radius: 1vw;
 	border-bottom: 0.5vw solid rgb(117, 201, 200);
-	text-align: center;
+	text-align: justify;
 }
 .aceptarIndex{
-	font-size: 4vw;
+	font-size: 2vw;
 	margin: 1vw;
 	padding: 1vw;
-	background: rgba(247, 244, 234,.5);
+	background: rgb(192, 185, 221);
 	border: buttonface;
 	border-radius: 1vw;
 }
 .aceptarIndex:hover{
-	font-size: 4vw;
+	
 	margin: 1vw;
 	padding: 1vw;
-	background: rgba(128, 161, 212,.7);
+	background: rgb(128, 161, 212);
 	border: buttonface;
 	border-radius: 1vw;
 }
 .aceptarIndex:active{
-	font-size: 4vw;
+	
 	margin: 1vw;
 	padding: 1vw;
-	background: rgba(117, 201, 200,.7);
+	background: rgba(61, 90, 108,.7);
+	
 	border: buttonface;
 	border-radius: 1vw;
 }
 .bodyControl{
-	background: url("../imagenes/fondoIndex.jpeg") no-repeat center top;
+	background: url("../recursos/fondoIndex.jpeg") no-repeat center top;
 	background-size:cover;
 }
 .sectionControl{
@@ -104,14 +110,17 @@
 }
 .tituloControl{
 	font-size: 3.5vw;
+	color: rgb(3, 56, 96);
 }
 .linkControl{
 	text-decoration: none;
-	color:black;
+	color: white;
+	/*color:rgb( 145, 108, 128);*/
 	text-align: center;
 }
 .botonControl:hover{
-	background: rgb(117, 201, 200);
+	background: rgba(3, 105, 206,.4);
+	/*background: rgb(28, 136, 229);*/
 }
 .botonControl:active{
 	background: rgb(247, 244, 234);
@@ -143,6 +152,7 @@
 .camposUsuarios{
 	width: 90%;
 	height: 90%;
+	border-spacing: 10px 5px;
 }
 
 .botonesUsuarios{
@@ -151,23 +161,24 @@
 }
 .labelUsuarios{
 	font-size: 2vw;
-	margin: 1vw 0;
+	margin: 1vw 2vm;
+	text-align: center;
 }
 .datoUsuarios{
-	font-size: 2vw;
+	font-size: 1vw;
 	padding: 1vw;
 	margin: 1vw 0;
-	background: rgba(192, 185, 221,.5);
+	/*background: rgba(192, 185, 221,.5);*/
 	border: none;
 	border-radius: 1vw;
 	border-bottom: 0.5vw solid rgb(117, 201, 200);
-	text-align: center;
+	text-align: justify;
 }
 .botonUsuarios{
 	font-size: 2vw;
 	margin: 1vw;
 	padding: 1vw;
-	background: rgba(247, 244, 234,.5);
+	background: rgb(192, 185, 221);
 	border: buttonface;
 	border-radius: 1vw;
 }
@@ -175,7 +186,8 @@
 	font-size: 2vw;
 	margin: 1vw;
 	padding: 1vw;
-	background: rgba(128, 161, 212,.7);
+	background: rgb(128, 161, 212);
+	/*background: rgba(128, 161, 212,.5);*/
 	border: buttonface;
 	border-radius: 1vw;
 }
