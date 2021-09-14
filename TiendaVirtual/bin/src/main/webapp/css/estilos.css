@@ -1,0 +1,201 @@
+@charset "UTF-8";
+*{
+	margin: 0;
+}
+.bodyIndex{
+	background: url("../recursos/fondoIndex.jpeg") no-repeat center top;
+	background-size:cover;
+}
+.sectionIndex {
+  	height: 90vh;
+  	width:90vw;
+  
+  	display: flex;
+  	justify-content: center;
+  	align-items: center;
+}
+
+.divIndex {
+	background: rgba(128, 161, 212,.5);
+	width: 60vw;
+	
+	display: flex;
+	justify-content: center;
+	align-items: center;  
+	flex-direction: column;
+	border-radius: 3vw;
+}
+.tableIndex{
+	width: 90%;
+	height: 90%;
+}
+.tituloIndex{
+	font-size: 5vw;
+	color: rgb(3, 56, 96);
+	/*background: rgb(192, 185, 221);*/
+	text-align: center;
+}
+::placeholder {
+  font-style: italic;
+}
+.labelIndex{
+	font-size: 3vw;
+	margin: 1vw 0;
+}
+.inputIndex{
+	font-size: 1vw;
+	margin: 1.5vw;
+	padding: 1.5vw;
+	/*padding: rgb(80, 168, 239) 0;
+	background: rgba(192, 185, 221,.5);*/
+	border: none;
+	border-radius: 1vw;
+	border-bottom: 0.5vw solid rgb(117, 201, 200);
+	text-align: justify;
+}
+.aceptarIndex{
+	font-size: 2vw;
+	margin: 1vw;
+	padding: 1vw;
+	background: rgb(192, 185, 221);
+	border: buttonface;
+	border-radius: 1vw;
+}
+.aceptarIndex:hover{
+	
+	margin: 1vw;
+	padding: 1vw;
+	background: rgb(128, 161, 212);
+	border: buttonface;
+	border-radius: 1vw;
+}
+.aceptarIndex:active{
+	
+	margin: 1vw;
+	padding: 1vw;
+	background: rgba(61, 90, 108,.7);
+	
+	border: buttonface;
+	border-radius: 1vw;
+}
+.bodyControl{
+	background: url("../recursos/fondoIndex.jpeg") no-repeat center top;
+	background-size:cover;
+}
+.sectionControl{
+  	height: 100vh;
+  	width: 100vw;
+  
+  	display: flex;
+  	justify-content: center;
+  	align-items: center;
+}
+.divControl{
+	background:rgba(128, 161, 212,.5);
+  	width: 99vw;
+  	height: 99vh;
+  
+  	display: flex;
+  	justify-content: center;
+  	align-items: center;  
+  	flex-direction: column;
+  	border-radius: 3vw;
+}
+.tableControl{
+	width: 98vw;
+	background: rgb(192, 185, 221);
+	color: black;
+	text-align: center;
+	font-size: 3vw;
+}
+.tituloControl{
+	font-size: 3.5vw;
+	color: rgb(3, 56, 96);
+}
+.linkControl{
+	text-decoration: none;
+	color: white;
+	/*color:rgb( 145, 108, 128);*/
+	text-align: center;
+}
+.botonControl:hover{
+	background: rgba(3, 105, 206,.4);
+	/*background: rgb(28, 136, 229);*/
+}
+.botonControl:active{
+	background: rgb(247, 244, 234);
+}
+.frameControl{
+	width: 98vw;
+	height: 89vh;
+	border: none;
+	border-radius: 2vw;
+}
+
+.sectionUsuarios{
+	height: 90vh;
+	width:90vw;
+  
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.divUsuarios{
+	width: 60vw;
+	height: 60vh;
+	
+	display: flex;
+	justify-content: center;
+	align-items: center;  
+	flex-direction: column;
+}
+.camposUsuarios{
+	width: 90%;
+	height: 90%;
+	border-spacing: 10px 5px;
+}
+
+.botonesUsuarios{
+	width: 90%;
+	height: 90%;
+}
+.labelUsuarios{
+	font-size: 2vw;
+	margin: 1vw 2vm;
+	text-align: center;
+}
+.datoUsuarios{
+	font-size: 1vw;
+	padding: 1vw;
+	margin: 1vw 0;
+	/*background: rgba(192, 185, 221,.5);*/
+	border: none;
+	border-radius: 1vw;
+	border-bottom: 0.5vw solid rgb(117, 201, 200);
+	text-align: justify;
+}
+.botonUsuarios{
+	font-size: 2vw;
+	margin: 1vw;
+	padding: 1vw;
+	background: rgb(192, 185, 221);
+	border: buttonface;
+	border-radius: 1vw;
+}
+.botonUsuarios:hover{
+	font-size: 2vw;
+	margin: 1vw;
+	padding: 1vw;
+	background: rgb(128, 161, 212);
+	/*background: rgba(128, 161, 212,.5);*/
+	border: buttonface;
+	border-radius: 1vw;
+}
+.botonUsuarios:active{
+	font-size: 2vw;
+	margin: 1vw;
+	padding: 1vw;
+	background: rgba(117, 201, 200,.7);
+	border: buttonface;
+	border-radius: 1vw;
+}
