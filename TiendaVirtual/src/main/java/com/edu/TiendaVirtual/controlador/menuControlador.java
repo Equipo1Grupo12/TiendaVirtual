@@ -12,6 +12,4 @@ public class menuControlador {
 	public String getMenu() {
 		return "menu";
 	}
-	
-	
 }

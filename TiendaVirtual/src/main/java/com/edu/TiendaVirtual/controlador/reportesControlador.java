@@ -8,10 +8,10 @@ import org.springframework.web.bind.annotation.RequestMapping;
 @RequestMapping("reportes")
 public class reportesControlador {
 	
-	@GetMapping
+	/*@GetMapping
 	public String getReportes() {
 		return "reportes";
-	}
+	}*/
 	
 
 }
