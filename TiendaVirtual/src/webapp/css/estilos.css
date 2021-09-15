@@ -8,7 +8,7 @@
 }
 .sectionIndex {
   	height: 90vh;
-  	width:100vw;
+  	width:90vw;
   
   	display: flex;
   	justify-content: center;
@@ -16,7 +16,7 @@
 }
 
 .divIndex {
-	background: rgba(128, 161, 212,.5);
+	background: rgb(128, 255, 0);
 	width: 60vw;
 	
 	display: flex;
@@ -31,7 +31,7 @@
 }
 .tituloIndex{
 	font-size: 5vw;
-	color: rgb(3, 56, 96);
+	color: rgb(128, 255, 0);
 	/*background: rgb(192, 185, 221);*/
 	text-align: center;
 }
