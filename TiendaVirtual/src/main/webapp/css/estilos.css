@@ -2,6 +2,7 @@
 *{
 	margin: 0;
 }
+
 .bodyIndex{
 	background: url("../recursos/fondoIndex.jpeg") no-repeat center top;
 	background-size:cover;
@@ -9,7 +10,6 @@
 .sectionIndex {
   	height: 90vh;
   	width:100vw;
-  
   	display: flex;
   	justify-content: center;
   	align-items: center;
@@ -18,7 +18,6 @@
 .divIndex {
 	background: rgba(128, 161, 212,.5);
 	width: 60vw;
-	
 	display: flex;
 	justify-content: center;
 	align-items: center;  
@@ -62,7 +61,6 @@
 	border-radius: 1vw;
 }
 .aceptarIndex:hover{
-	
 	margin: 1vw;
 	padding: 1vw;
 	background: rgb(128, 161, 212);
@@ -70,11 +68,9 @@
 	border-radius: 1vw;
 }
 .aceptarIndex:active{
-	
 	margin: 1vw;
 	padding: 1vw;
 	background: rgba(61, 90, 108,.7);
-	
 	border: buttonface;
 	border-radius: 1vw;
 }
@@ -85,7 +81,6 @@
 .sectionControl{
   	height: 100vh;
   	width: 100vw;
-  
   	display: flex;
   	justify-content: center;
   	align-items: center;
@@ -94,7 +89,6 @@
 	background:rgba(128, 161, 212,.5);
   	width: 99vw;
   	height: 99vh;
-  
   	display: flex;
   	justify-content: center;
   	align-items: center;  
@@ -132,10 +126,21 @@
 	border-radius: 2vw;
 }
 
+.bodyUsuarios {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+}
+
+
+::-webkit-scrollbar {
+    background-color: transparent;
+}
+
 .sectionUsuarios{
 	height: 90vh;
-	width:100vw;
-  
+	width:90vw;
 	display: flex;
 	justify-content: center;
 	align-items: center;
@@ -143,7 +148,6 @@
 .divUsuarios{
 	width: 60vw;
 	height: 60vh;
-	
 	display: flex;
 	justify-content: center;
 	align-items: center;  
@@ -159,11 +163,13 @@
 	width: 90%;
 	height: 90%;
 }
+
 .labelUsuarios{
 	font-size: 2vw;
 	margin: 1vw 2vm;
 	text-align: center;
 }
+
 .datoUsuarios{
 	font-size: 1vw;
 	padding: 1vw;
@@ -174,6 +180,7 @@
 	border-bottom: 0.5vw solid rgb(117, 201, 200);
 	text-align: justify;
 }
+
 .botonUsuarios{
 	font-size: 2vw;
 	margin: 1vw;
@@ -182,6 +189,7 @@
 	border: buttonface;
 	border-radius: 1vw;
 }
+
 .botonUsuarios:hover{
 	font-size: 2vw;
 	margin: 1vw;
@@ -191,6 +199,7 @@
 	border: buttonface;
 	border-radius: 1vw;
 }
+
 .botonUsuarios:active{
 	font-size: 2vw;
 	margin: 1vw;
@@ -199,3 +208,62 @@
 	border: buttonface;
 	border-radius: 1vw;
 }
+
+.sectionUsuarios__table {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 90vw;
+	margin-bottom: 10px;
+}
+
+.sectionUsuarios__table table{
+	width: 100%;
+}
+
+.sectionUsuarios__table th {
+	background:rgb(192, 185, 221);
+	color: white;
+	padding: 8px;
+}
+
+.sectionUsuarios__table td {
+	background: #F7F4F436;
+	width: auto;
+	padding: 8px;
+}
+
+.table_action_buttons {
+	display: flex;
+	justify-content: space-evenly;
+	align-items: center;
+}
+
+.btn {
+	padding: 5px 10px;
+	font-size: 15px;
+	line-height: 1.5;
+	border-radius: 3px;
+	color: white;
+	text-decoration: none;
+}
+
+.btn-danger {
+	background-color: #d9534f;
+	border-color: #d43f3a;
+}
+
+.btn-danger:hover {
+	background-color: #be2f2b;
+}
+
+.btn-success {
+	background-color: #449d44;
+	border-color: #398439;
+}
+
+.btn-success:hover {
+	background-color: #085808;
+}
+
+

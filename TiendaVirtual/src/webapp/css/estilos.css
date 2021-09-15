@@ -7,18 +7,16 @@
 	background-size:cover;
 }
 .sectionIndex {
-  	height: 90vh;
-  	width:90vw;
-  
-  	display: flex;
-  	justify-content: center;
-  	align-items: center;
+	height: 90vh;
+	width:90vw;
+	display: flex;
+	justify-content: center;
+	align-items: center;
 }
 
 .divIndex {
 	background: rgb(128, 255, 0);
 	width: 60vw;
-	
 	display: flex;
 	justify-content: center;
 	align-items: center;  
@@ -36,7 +34,7 @@
 	text-align: center;
 }
 ::placeholder {
-  font-style: italic;
+	font-style: italic;
 }
 .labelIndex{
 	font-size: 3vw;
@@ -74,7 +72,6 @@
 	margin: 1vw;
 	padding: 1vw;
 	background: rgba(61, 90, 108,.7);
-	
 	border: buttonface;
 	border-radius: 1vw;
 }
@@ -83,23 +80,21 @@
 	background-size:cover;
 }
 .sectionControl{
-  	height: 100vh;
-  	width: 100vw;
-  
-  	display: flex;
-  	justify-content: center;
-  	align-items: center;
+	height: 100vh;
+	width: 100vw;
+	display: flex;
+	justify-content: center;
+	align-items: center;
 }
 .divControl{
 	background:rgba(128, 161, 212,.5);
-  	width: 99vw;
-  	height: 99vh;
-  
-  	display: flex;
-  	justify-content: center;
-  	align-items: center;  
-  	flex-direction: column;
-  	border-radius: 3vw;
+	width: 99vw;
+	height: 99vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;  
+	flex-direction: column;
+	border-radius: 3vw;
 }
 .tableControl{
 	width: 98vw;
@@ -134,8 +129,7 @@
 
 .sectionUsuarios{
 	height: 90vh;
-	width:90vw;
-  
+	width: 90vw;
 	display: flex;
 	justify-content: center;
 	align-items: center;
@@ -143,7 +137,7 @@
 .divUsuarios{
 	width: 60vw;
 	height: 60vh;
-	
+
 	display: flex;
 	justify-content: center;
 	align-items: center;  
@@ -199,3 +193,10 @@
 	border: buttonface;
 	border-radius: 1vw;
 }
+
+.sectionUsuarios__table {
+	background:rgb(3, 56, 96);
+}
+
+/* table - thead - tr - th
+	  - tbody - tr - td */
