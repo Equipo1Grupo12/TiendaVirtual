@@ -1,4 +1,4 @@
-package com.example.demo.document;
+package com.edu.TiendaVirtual.document;
 
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;

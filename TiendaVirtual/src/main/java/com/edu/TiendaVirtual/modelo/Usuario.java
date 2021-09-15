@@ -1,4 +1,4 @@
-package com.example.demo.modelo;
+package com.edu.TiendaVirtual.modelo;
 
 
 import javax.persistence.Column;

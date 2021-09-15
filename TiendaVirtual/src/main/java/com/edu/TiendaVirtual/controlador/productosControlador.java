@@ -1,15 +1,15 @@
-package com.example.demo.controlador;
+package com.edu.TiendaVirtual.controlador;
 
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 
 @Controller
-@RequestMapping("clientes")
-public class clientesControlador {
+@RequestMapping ("productos")
+public class productosControlador {
 
 	@GetMapping
-	public String getClientes() {
-		return "clientes";
+	public String getProductos() {
+		return "productos";
 	}
 }

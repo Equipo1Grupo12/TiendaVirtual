@@ -1,4 +1,4 @@
-package com.example.demo;
+package com.edu.TiendaVirtual;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;

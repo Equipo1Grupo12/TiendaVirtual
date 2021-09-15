@@ -1,4 +1,4 @@
-package com.example.demo.controlador;
+package com.edu.TiendaVirtual.controlador;
 
 import org.springframework.stereotype.Controller;
 import org.springframework.util.MultiValueMap;
