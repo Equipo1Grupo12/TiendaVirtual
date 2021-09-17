@@ -11,5 +11,6 @@ public class clientesControlador {
 	@GetMapping
 	public String getClientes() {
 		return "clientes";
+		/*prueba diego*/
 	}
 }
