@@ -74,7 +74,7 @@ public class Usuario {
 		usuario = pUsuario;
 	}
 	
-	
+	/*diego*/
 	
 	
 
