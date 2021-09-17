@@ -28,6 +28,7 @@ public class UsuarioControlador {
 	
 	@GetMapping()
 	public void UsuariosPage(){
+		// naren was here 
 	}
 	
 	@GetMapping("/listar")
