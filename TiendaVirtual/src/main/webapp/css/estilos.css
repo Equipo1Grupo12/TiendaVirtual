@@ -45,8 +45,6 @@
 	font-size: 1vw;
 	margin: 1.5vw;
 	padding: 1.5vw;
-	/*padding: rgb(80, 168, 239) 0;
-	background: rgba(192, 185, 221,.5);*/
 	border: none;
 	border-radius: 1vw;
 	border-bottom: 0.5vw solid rgb(117, 201, 200);
@@ -61,19 +59,12 @@
 	border-radius: 1vw;
 }
 .aceptarIndex:hover{
-	margin: 1vw;
-	padding: 1vw;
 	background: rgb(128, 161, 212);
-	border: buttonface;
-	border-radius: 1vw;
 }
 .aceptarIndex:active{
-	margin: 1vw;
-	padding: 1vw;
 	background: rgba(61, 90, 108,.7);
-	border: buttonface;
-	border-radius: 1vw;
 }
+
 .bodyControl{
 	background: url("../recursos/fondoIndex.jpeg") no-repeat center top;
 	background-size:cover;
@@ -109,16 +100,16 @@
 .linkControl{
 	text-decoration: none;
 	color: white;
-	/*color:rgb( 145, 108, 128);*/
 	text-align: center;
 }
+
 .botonControl:hover{
 	background: rgba(3, 105, 206,.4);
-	/*background: rgb(28, 136, 229);*/
 }
 .botonControl:active{
 	background: rgb(247, 244, 234);
 }
+
 .frameControl{
 	width: 98vw;
 	height: 89vh;
@@ -133,13 +124,14 @@
 	flex-direction: column;
 }
 
-
 ::-webkit-scrollbar {
     background-color: transparent;
 }
 
 .sectionUsuarios{
-	height: 90vh;
+	height: auto;
+	margin-bottom: 30px;
+	margin-top: 30px;
 	width:90vw;
 	display: flex;
 	justify-content: center;
@@ -159,11 +151,6 @@
 	border-spacing: 10px 5px;
 }
 
-.botonesUsuarios{
-	width: 90%;
-	height: 90%;
-}
-
 .labelUsuarios{
 	font-size: 2vw;
 	margin: 1vw 2vm;
@@ -181,32 +168,25 @@
 	text-align: justify;
 }
 
-.botonUsuarios{
+.btnUsuarios{
 	font-size: 2vw;
-	margin: 1vw;
 	padding: 1vw;
 	background: rgb(192, 185, 221);
 	border: buttonface;
-	border-radius: 1vw;
+	border-radius: 2vw;
 }
 
-.botonUsuarios:hover{
-	font-size: 2vw;
-	margin: 1vw;
-	padding: 1vw;
+.btnUsuarios:hover{
 	background: rgb(128, 161, 212);
 	/*background: rgba(128, 161, 212,.5);*/
-	border: buttonface;
-	border-radius: 1vw;
 }
 
-.botonUsuarios:active{
-	font-size: 2vw;
-	margin: 1vw;
-	padding: 1vw;
+.btnUsuarios:active{
 	background: rgba(117, 201, 200,.7);
-	border: buttonface;
-	border-radius: 1vw;
+}
+
+.botonesUsuarios button{
+	font-size: 2vw;
 }
 
 .sectionUsuarios__table {
@@ -246,6 +226,7 @@
 	border-radius: 3px;
 	color: white;
 	text-decoration: none;
+	border: buttonface;
 }
 
 .btn-danger {
@@ -266,4 +247,52 @@
 	background-color: #085808;
 }
 
+.btn-warning {
+    background-color: #f0ad4e;
+    border-color: #eea236;
+}
 
+.btn-warning:hover {
+    background-color: #ec971f;
+    border-color: #d58512;
+}
+
+.alert {
+	width: 90vw;
+	padding: 15px;
+    padding-right: 15px;
+	margin-bottom: 20px;
+	border: 1px solid transparent;
+		border-top-color: transparent;
+		border-right-color: transparent;
+		border-bottom-color: transparent;
+		border-left-color: transparent;
+	border-radius: 4px;
+}
+
+.alert-danger {
+	color: #a94442;
+	background-color: #f2dede;
+	border-color: #ebccd1;
+}
+
+.alert-success {
+	color: #3c763d;
+	background-color: #dff0d8;
+	border-color: #d6e9c6;
+}
+
+#buscador {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin-bottom: 30px;
+}
+
+#buscador label{
+	margin-right: 30px;
+}
+
+#buscador input{
+	width: 50vw;
+}
