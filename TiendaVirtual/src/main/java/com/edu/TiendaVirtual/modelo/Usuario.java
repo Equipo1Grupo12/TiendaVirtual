@@ -73,9 +73,5 @@ public class Usuario {
 	public void setUsuario(String pUsuario) {
 		usuario = pUsuario;
 	}
-	
-	/*diego*/
-	
-	
 
 }
