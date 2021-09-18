@@ -21,19 +21,19 @@
 			<table class="camposUsuarios">
 				<tr>
 					<td><label class="labelUsuarios" for="cedula">Cédula:</label> </td>
-					<td><input type="text" class="datoUsuarios" id="cedula" name="ced" size="42"placeholder="Escriba su cédula sin puntos ni comas" ></td>
+					<td><input type="text" class="datoUsuarios" value="${olldC}" name="ced" size="42"placeholder="Escriba su cédula sin puntos ni comas" required="required" ></td>
 					<td><label class="labelUsuarios" for="usuario">Usuario:</label> </td>
-					<td><input type="text" class="datoUsuarios" id="usuario" name="user" size="40"placeholder="Escriba su usuario" ></td>
+					<td><input type="text" class="datoUsuarios"value="${olldU}" name="user" size="40"placeholder="Escriba su usuario" required="required" ></td>
 				</tr>
 				<tr>
 					<td><label class="labelUsuarios" for="nombre">Nombre Completo:</label> </td>
-					<td><input type="text" class="datoUsuarios" id="nombre" name="nom_comp" size="42" placeholder="Escriba su nombre completo"></td>
+					<td><input type="text" class="datoUsuarios" value="${olldN}" name="nom_comp" size="42" placeholder="Escriba su nombre completo" required="required"></td>
 					<td><label class="labelUsuarios" for="password">Contraseña:</label> </td>
-					<td><input type="password" class="datoUsuarios" id="password" name="contra" size="40" placeholder="Escriba su contraseña"></td>
+					<td><input type="password" class="datoUsuarios" value="${olldP}" name="contra" size="40" placeholder="Escriba su contraseña" required="required"></td>
 				</tr>
 				<tr>
 					<td><label class="labelUsuarios" for="correo">Correo Electrónico:</label> </td>
-					<td><input type="email" class="datoUsuarios" id="correo" name="correo" size="42" placeholder="Escriba su correo electrónico. Ej: tu@correo.com"></td>
+					<td><input type="email" class="datoUsuarios" value="${olldE}" name="correo" size="42" placeholder="Escriba su correo electrónico. Ej: tu@correo.com" required="required"></td>
 				</tr>
 			</table>
 			<div class="botonesUsuarios">
