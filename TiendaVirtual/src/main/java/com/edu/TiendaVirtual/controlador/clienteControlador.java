@@ -61,4 +61,4 @@ public class clienteControlador {
 	public void actualizar(@RequestBody Cliente clientes) {
 		clientesDAO.save(clientes);
 	}
-}
+} 
