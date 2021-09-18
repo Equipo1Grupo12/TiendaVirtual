@@ -1,50 +1,110 @@
-/**
- * let usuarios -> lista de usuarios
- * Usuarios_info_table -> id tbody en html
- * formulario -> id input text buscador
- * Buscar -> id boton buscar
-**/
-const formulario = document.querySelector("#formulario")
-const boton = document.querySelector("#Buscar")
-const tabla_usuarios = document.querySelector("#Usuarios_info_table")
+	/**
+	 * let elementos -> lista de elementos
+	 * info_table -> id tbody en html
+	 * formulario -> id input text buscador
+	**/
 
-
-const filtrar = () => {
-    tabla_usuarios.innerHTML = ""
-    const texto = formulario.value.toLowerCase()    
-    if (usuarios.length === 0)
-        tabla_usuarios.innerHTML = "<h4>No existen usuarios</h4>"
-    else {
-        for(let usuario of usuarios) {
-            let nombre = usuario.nombre.toLowerCase()
-            if (nombre.indexOf(texto) != -1){
-                tabla_usuarios.innerHTML += `<tr class="tablas">
-                        <td>${usuario.id}</td>
-                        <td>${usuario.cedula}</td>
-                        <td>${usuario.nombre}</td>
-                        <td>${usuario.email}</td>
-                        <td>${usuario.usuario}</td>
-                        <td>
-                            <a href= "usuarios/${usuario.cedula}" title="modalActualizar" class="btn btn-success btn-sm">Actualizar</a>
-                            <a href="usuarios/del/${usuario.cedula}"  title="modalEliminar" class="btn btn-danger btn-sm">Eliminar</a>
-                        </td>
-                    </tr>`
+	const formulario = document.querySelector("#formulario") // Barra de busqueda
+	const tabla_elementos = document.querySelector("#info_table") //tbody de elementos
+	
+	
+	const filtrarUsuarios = () => {
+        tabla_elementos.innerHTML = ""
+        const texto = formulario.value.toLowerCase()    
+        if (elementos.length === 0)
+            tabla_elementos.innerHTML = "<h4>No existen usuarios</h4>"
+        else {
+            for(let elemento of elementos) {
+                let nombre = elemento.nombre.toLowerCase()
+                if (nombre.indexOf(texto) != -1){
+                    tabla_elementos.innerHTML += `<tr class="tablas">
+                            <td>${elemento.id}</td>
+                            <td>${elemento.cedula}</td>
+                            <td>${elemento.nombre}</td>
+                            <td>${elemento.email}</td>
+                            <td>${elemento.usuario}</td>
+                            <td class="botones_acciones">
+                                <a href= "usuarios/${elemento.cedula}" title="modalActualizar" class="btn btn-success btn-sm">Actualizar</a>
+                                <a href="usuarios/del/${elemento.cedula}"  title="modalEliminar" class="btn btn-danger btn-sm">Eliminar</a>
+                            </td>
+                        </tr>`
+                }
             }
+            if (tabla_elementos.innerHTML == "")
+                tabla_elementos.innerHTML = "<h4>Usuario no encontrado</h4>"
         }
-        if (tabla_usuarios.innerHTML == "")
-            tabla_usuarios.innerHTML = "<h4>Usuario no encontrado</h4>"
-    }
-    
-}
-
-const userID = () => {
-	let count = 0
-	for(let usuario of usuarios) {
-		usuario.id = count + 1
-		count += 1
 	}
-	filtrar()
-}
 
-userID()
-formulario.addEventListener('keyup', filtrar)
+    const filtrarClientes = () => {
+        tabla_elementos.innerHTML = ""
+        const texto = formulario.value.toLowerCase()    
+        if (elementos.length === 0)
+            tabla_elementos.innerHTML = "<h4>No existen clientes</h4>"
+        else {
+            for(let elemento of elementos) {
+                let nombre = elemento.nombre.toLowerCase()
+                if (nombre.indexOf(texto) != -1){
+                    tabla_elementos.innerHTML += `<tr class="tablas">
+                            <td>${elemento.id}</td>
+                            <td>${elemento.cedula}</td>
+                            <td>${elemento.nombre}</td>
+                            <td>${elemento.email}</td>
+                            <td>${elemento.telefono}</td>
+                            <td>${elemento.direccion}</td>
+                            <td class="botones_acciones">
+                                <a href= "usuarios/${elemento.cedula}" title="modalActualizar" class="btn btn-success btn-sm">Actualizar</a>
+                                <a href="usuarios/del/${elemento.cedula}"  title="modalEliminar" class="btn btn-danger btn-sm">Eliminar</a>
+                            </td>
+                        </tr>`
+                }
+            }
+            if (tabla_elementos.innerHTML == "")
+                tabla_elementos.innerHTML = "<h4>Cliente no encontrado</h4>"
+        }
+	}
+
+    
+    const filtrarProveedores = () => {
+        tabla_elementos.innerHTML = ""
+        const texto = formulario.value.toLowerCase()    
+        if (elementos.length === 0)
+            tabla_elementos.innerHTML = "<h4>No existen Proveedores</h4>"
+        else {
+            for(let elemento of elementos) {
+                let nombre = elemento.nombre.toLowerCase()
+                if (nombre.indexOf(texto) != -1){
+                    tabla_elementos.innerHTML += `<tr class="tablas">
+                            <td>${elemento.nit}</td>
+                            <td>${elemento.nombre}</td>
+                            <td>${elemento.direccion}</td>
+                            <td>${elemento.telefono}</td>
+                            <td>${elemento.ciudad}</td>
+                            <td class="botones_acciones">
+                                <a href= "usuarios/${elemento.nit}" title="modalActualizar" class="btn btn-success btn-sm">Actualizar</a>
+                                <a href="usuarios/del/${elemento.nit}"  title="modalEliminar" class="btn btn-danger btn-sm">Eliminar</a>
+                            </td>
+                        </tr>`
+                }
+            }
+            if (tabla_elementos.innerHTML == "")
+                tabla_elementos.innerHTML = "<h4>Proveedor no encontrado</h4>"
+        }
+	}
+	
+    const filtro = {
+        usuario: filtrarUsuarios,
+        cliente: filtrarClientes,
+        proveedor: filtrarProveedores,
+    }
+
+	const userID = () => {
+		let count = 0
+		for(let elemento of elementos) {
+			elemento.id = count + 1
+			count += 1
+		}
+        filtro[tipo]()
+	}
+	
+	userID()
+	formulario.addEventListener('keyup', filtro[tipo])

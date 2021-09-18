@@ -61,15 +61,22 @@
                     <th>Acciones</th>
                 </tr>
             </thead>
-            <tbody id="Usuarios_info_table"><tbody>
+            <tbody id="info_table"><tbody>
         </table>
     </section>
     <script>
-	    let usuarios = [
-	    	<c:forEach items="${listado}" var="x">
-	    		{id:"", cedula:"${x.cedula}", nombre:"${x.nombre_usuario}", email:"${x.email_usuario}", usuario:"${x.usuario}"},
-	    	</c:forEach>
-	    ]
+		let elementos = [
+			<c:forEach items="${listado}" var="x">
+				{id:"", cedula:"${x.cedula}", nombre:"${x.nombre_usuario}", email:"${x.email_usuario}", usuario:"${x.usuario}"},
+			</c:forEach>
+		]
+		/*
+		let elementos = [
+			{id:"", cedula:"${x.cedula}", nombre:"${x.nombre_usuario}", email:"${x.email_usuario}", usuario:"${x.usuario}"},
+			{id:"", cedula:"${x.cedula}", nombre:"${x.nombre_usuario}", email:"${x.email_usuario}", usuario:"${x.usuario}"},
+		]
+		*/
+		let tipo = "usuario"
     </script>
     <script src="../js/filtro.js"></script>
 </body>

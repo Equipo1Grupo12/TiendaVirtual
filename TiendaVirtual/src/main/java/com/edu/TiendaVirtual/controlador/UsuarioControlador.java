@@ -79,7 +79,7 @@ public class UsuarioControlador {
 		model.addAttribute("olldU", oldUser.getUsuario());
 		model.addAttribute("olldP", oldUser.getPassword());
 		model.addAttribute("btnact", "<button type=\"submit\"class=\"btn btn-success btn-sm\"  name=\"crear\">Actualizar usuario</button>");
-		model.addAttribute("btncancel", "<button type=\"submit\" class=\"btn btn-success btn-sm\"  name=\"crear\">Cancelar</button>");
+		model.addAttribute("btncancel", "<button type=\"submit\" class=\"btn btn-danger btn-sm\"  name=\"crear\">Cancelar</button>");
 		getUsuarios(model);
 		return "usuarios";
 	}
