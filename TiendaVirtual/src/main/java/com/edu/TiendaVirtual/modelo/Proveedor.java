@@ -9,12 +9,12 @@ import javax.persistence.Id;
 import javax.persistence.Table;
 
 @Entity
-@Table(name="clientes")
-public class Cliente {
+@Table(name="proveedores")
+public class Proveedor {
 	
 	@Id
-	@Column(name="cedula")
-	private int cedula;
+	@Column(name="nit")
+	private int nit;
 	
 	@Column(name="telefono",length = 50)
 	private String telefono;
@@ -22,18 +22,18 @@ public class Cliente {
 	@Column(name="nombre",length = 50)
 	private String nombre;
 	
-	@Column(name="email",length = 50)
-	private String email;
+	@Column(name="ciudad",length = 50)
+	private String ciudad;
 	
 	@Column(name="direccion",length = 50)
 	private String direccion;
 
-	public int getCedula() {
-		return cedula;
+	public int getNit() {
+		return nit;
 	}
 
-	public void setCedula(int cedula) {
-		this.cedula = cedula;
+	public void setNit(int nit) {
+		this.nit = nit;
 	}
 
 	public String getTelefono() {
@@ -52,12 +52,12 @@ public class Cliente {
 		this.nombre = nombre;
 	}
 
-	public String getEmail() {
-		return email;
+	public String getCiudad() {
+		return ciudad;
 	}
 
-	public void setEmail(String email) {
-		this.email = email;
+	public void setCiudad(String ciudad) {
+		this.ciudad = ciudad;
 	}
 
 	public String getDireccion() {
@@ -67,7 +67,6 @@ public class Cliente {
 	public void setDireccion(String direccion) {
 		this.direccion = direccion;
 	}
-	
 	
 	
 }
