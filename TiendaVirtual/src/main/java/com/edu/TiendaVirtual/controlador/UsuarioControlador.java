@@ -99,6 +99,8 @@ public class UsuarioControlador {
 		return "redirect:/usuarios";
 	}
 	
+	//SI VEZ ESTO ANIMO MUCHACHOS JEJEEJ 
+	
 	
 	
 	
