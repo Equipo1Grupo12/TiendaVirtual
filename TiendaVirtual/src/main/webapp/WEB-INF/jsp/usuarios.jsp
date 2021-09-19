@@ -54,10 +54,10 @@
             <thead class="tablas">
                 <tr>
                     <th>#</th>
+                    <th>Usuario</th>
                     <th>Cedula</th>
                     <th>Nombre</th>
                     <th>Correo Electronico</th>
-                    <th>Usuario</th>
                     <th>Acciones</th>
                 </tr>
             </thead>

@@ -15,14 +15,14 @@
             tabla_elementos.innerHTML = "<h4>No existen usuarios</h4>"
         else {
             for(let elemento of elementos) {
-                let nombre = elemento.nombre.toLowerCase()
-                if (nombre.indexOf(texto) != -1){
+                let usuario = elemento.usuario.toLowerCase()
+                if (usuario.indexOf(texto) != -1){
                     tabla_elementos.innerHTML += `<tr class="tablas">
                             <td>${elemento.id}</td>
-                            <td>${elemento.cedula}</td>
-                            <td>${elemento.nombre}</td>
+							<td>${elemento.usuario}</td>                            
+							<td>${elemento.cedula}</td>
+							<td>${elemento.nombre}</td>
                             <td>${elemento.email}</td>
-                            <td>${elemento.usuario}</td>
                             <td class="botones_acciones">
                                 <a href= "usuarios/${elemento.cedula}" title="modalActualizar" class="btn btn-success btn-sm">Actualizar</a>
                                 <a href="usuarios/del/${elemento.cedula}"  title="modalEliminar" class="btn btn-danger btn-sm">Eliminar</a>

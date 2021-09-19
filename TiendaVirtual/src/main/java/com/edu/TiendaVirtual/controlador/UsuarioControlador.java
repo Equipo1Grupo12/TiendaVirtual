@@ -97,7 +97,7 @@ public class UsuarioControlador {
 		aux.setPassword(request.getParameter("contra"));
 		usuariosDAO.save(aux);
 		return "redirect:/usuarios";
-	}
+	}	
 	
 	//SI VEZ ESTO ANIMO MUCHACHOS JEJEEJ fd
 	
