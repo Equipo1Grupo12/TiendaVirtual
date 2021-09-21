@@ -7,6 +7,10 @@
 .bodyIndex{
 	background: url("../recursos/fondoIndex.jpeg") no-repeat center top;
 	background-size:cover;
+	display: flex;
+	flex-direction: column;
+  	justify-content: center;
+  	align-items: center;
 }
 .sectionIndex {
   	height: 90vh;
@@ -302,4 +306,13 @@
 
 #buscador input{
 	width: 50vw;
+}
+
+.hide {
+	display: none;
+}
+
+#userSessionMessage {
+	margin: 10px;
+	color: rgb(3, 56, 96);
 }

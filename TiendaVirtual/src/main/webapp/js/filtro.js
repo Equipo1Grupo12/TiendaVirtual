@@ -17,17 +17,27 @@
             for(let elemento of elementos) {
                 let usuario = elemento.usuario.toLowerCase()
                 if (usuario.indexOf(texto) != -1){
-                    tabla_elementos.innerHTML += `<tr class="tablas">
-                            <td>${elemento.id}</td>
-							<td>${elemento.usuario}</td>                            
-							<td>${elemento.cedula}</td>
-							<td>${elemento.nombre}</td>
-                            <td>${elemento.email}</td>
-                            <td class="botones_acciones">
-                                <a href= "usuarios/${elemento.cedula}" title="modalActualizar" class="btn btn-success btn-sm">Actualizar</a>
-                                <a href="usuarios/del/${elemento.cedula}"  title="modalEliminar" class="btn btn-danger btn-sm">Eliminar</a>
-                            </td>
-                        </tr>`
+					if (elemento.usuario == "admininicial"){
+						tabla_elementos.innerHTML += `<tr class="tablas">
+	                            <td>${elemento.id}</td>
+								<td>${elemento.usuario}</td>                            
+								<td>${elemento.cedula}</td>
+								<td>${elemento.nombre}</td>
+	                            <td>${elemento.email}</td>
+	                        </tr>`
+					} else {
+	                    tabla_elementos.innerHTML += `<tr class="tablas">
+	                            <td>${elemento.id}</td>
+								<td>${elemento.usuario}</td>                            
+								<td>${elemento.cedula}</td>
+								<td>${elemento.nombre}</td>
+	                            <td>${elemento.email}</td>
+	                            <td class="botones_acciones">
+	                                <a href= "usuarios/${elemento.cedula}" title="modalActualizar" class="btn btn-success btn-sm">Actualizar</a>
+	                                <a href="usuarios/del/${elemento.cedula}"  title="modalEliminar" class="btn btn-danger btn-sm">Eliminar</a>
+	                            </td>
+	                        </tr>`
+					}
                 }
             }
             if (tabla_elementos.innerHTML == "")

@@ -14,16 +14,25 @@
 			<table  class="tableControl">
 				<caption class="tituloControl">Tienda Genérica</caption>
 				<tr>
-					<td class="botonControl"><a href="usuarios" target="marcoUsuarios" class="linkControl">Usuarios</a></td>
+					<td class="botonControl" id="usuarios"><a href="usuarios" target="marcoUsuarios" class="linkControl">Usuarios</a></td>
 					<td class="botonControl"><a href="clientes" target="marcoUsuarios" class="linkControl">Clientes</a></td>
 					<td class="botonControl"><a href="proveedores" target="marcoUsuarios" class="linkControl">Proveedores</a></td>
 					<td class="botonControl"><a href="productos" target="marcoUsuarios" class="linkControl">Productos</a></td>
 					<td class="botonControl"><a href="ventas" target="marcoUsuarios" class="linkControl">Ventas</a></td>
-					<td class="botonControl"><a href="reportes" target="marcoUsuarios" class="linkControl">Reportes</a></td> 
+					<td class="botonControl"><a href="reportes" target="marcoUsuarios" class="linkControl">Reportes</a></td>
 				</tr>				
 			</table>
+			<h3 id="userSessionMessage">Bienvenido ${user}</h3>
 			<iframe name="marcoUsuarios" class="frameControl" ></iframe>
 		</div>
 	</section>
+	<script>
+		let botonUsuarios = document.querySelector("#usuarios");
+		let usuario = "${user}"
+		if(usuario != "admininicial")
+			botonUsuarios.classList.add("hide");
+		else
+			botonUsuarios.classList.remove("hide");
+	</script>
 </body>
 </html>

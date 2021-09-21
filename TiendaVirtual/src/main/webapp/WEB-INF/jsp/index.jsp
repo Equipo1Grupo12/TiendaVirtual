@@ -8,6 +8,7 @@
 <link href="css/estilos.css" rel="stylesheet">
 </head>
 <body class="bodyIndex">
+	${alerta}
 	<section class="sectionIndex">
 		<form class="divIndex" method="post" action="index">
 			<table class="tableIndex">
