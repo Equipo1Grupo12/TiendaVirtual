@@ -52,8 +52,8 @@
                             <td>${elemento.telefono}</td>
                             <td>${elemento.direccion}</td>
                             <td class="botones_acciones">
-                                <a href= "usuarios/${elemento.cedula}" title="modalActualizar" class="btn btn-success btn-sm">Actualizar</a>
-                                <a href="usuarios/del/${elemento.cedula}"  title="modalEliminar" class="btn btn-danger btn-sm">Eliminar</a>
+                                <a href= "clientes/${elemento.cedula}" title="modalActualizar" class="btn btn-success btn-sm">Actualizar</a>
+                                <a href="clientes/del/${elemento.cedula}"  title="modalEliminar" class="btn btn-danger btn-sm">Eliminar</a>
                             </td>
                         </tr>`
                 }
@@ -74,14 +74,15 @@
                 let nombre = elemento.nombre.toLowerCase()
                 if (nombre.indexOf(texto) != -1){
                     tabla_elementos.innerHTML += `<tr class="tablas">
-                            <td>${elemento.nit}</td>
+                            <td>${elemento.id}</td>
+							<td>${elemento.nit}</td>
                             <td>${elemento.nombre}</td>
                             <td>${elemento.direccion}</td>
                             <td>${elemento.telefono}</td>
                             <td>${elemento.ciudad}</td>
                             <td class="botones_acciones">
-                                <a href= "usuarios/${elemento.nit}" title="modalActualizar" class="btn btn-success btn-sm">Actualizar</a>
-                                <a href="usuarios/del/${elemento.nit}"  title="modalEliminar" class="btn btn-danger btn-sm">Eliminar</a>
+                                <a href= "proveedores/${elemento.nit}" title="modalActualizar" class="btn btn-success btn-sm">Actualizar</a>
+                                <a href="proveedores/del/${elemento.nit}"  title="modalEliminar" class="btn btn-danger btn-sm">Eliminar</a>
                             </td>
                         </tr>`
                 }

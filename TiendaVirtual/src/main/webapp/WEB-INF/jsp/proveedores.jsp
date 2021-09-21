@@ -21,19 +21,19 @@
 			<table class="camposUsuarios">
 				<tr>
 					<td><label class="labelUsuarios" for="cedula">NIT:</label> </td>
-					<td><input type="text" class="datoUsuarios" value="${olldNit}" name="nit" size="42"placeholder="Escriba el NIT sin puntos ni comas" required="required" ></td>
+					<td><input type="text" class="datoUsuarios" value="${olldC}" name="nit" size="42"placeholder="Escriba el NIT sin puntos ni comas" required="required" ></td>
 					<td><label class="labelUsuarios" for="usuario">Teléfono:</label> </td>
-					<td><input type="text" class="datoUsuarios"value="${olldTel}" name="tel" size="40"placeholder="Escriba su teléfono" required="required" ></td>
+					<td><input type="text" class="datoUsuarios"value="${olldN}" name="telefono" size="40"placeholder="Escriba su teléfono" required="required" ></td>
 				</tr>
 				<tr>
 					<td><label class="labelUsuarios" for="nombre">Nombre Proveedor:</label> </td>
-					<td><input type="text" class="datoUsuarios" value="${olldN}" name="nom_comp" size="42" placeholder="Escriba nombre del proveedor" required="required"></td>
+					<td><input type="text" class="datoUsuarios" value="${olldE}" name="nom_comp" size="42" placeholder="Escriba nombre del proveedor" required="required"></td>
 					<td><label class="labelUsuarios" for="password">Ciudad:</label> </td>
-					<td><input type="text" class="datoUsuarios" value="${olldC}" name="ciudad" size="40" placeholder="Escriba la ciudad del proveedor." required="required"></td>
+					<td><input type="text" class="datoUsuarios" value="${olldU}" name="ciudad" size="40" placeholder="Escriba la ciudad del proveedor." required="required"></td>
 				</tr>
 				<tr>
 					<td><label class="labelUsuarios" for="correo">Dirección:</label> </td>
-					<td><input type="text" class="datoUsuarios" value="${olldD}" name="direccion" size="42" placeholder="Escriba su dirección" required="required"></td>
+					<td><input type="text" class="datoUsuarios" value="${olldP}" name="direccion" size="42" placeholder="Escriba su dirección" required="required"></td>
 				</tr>
 			</table>
 			<div class="botonesUsuarios">
@@ -68,7 +68,7 @@
     <script>
 		let elementos = [
 			<c:forEach items="${listado}" var="x">
-				{id:"", nit:"${x.nit}", nombre:"${x.nombre_proveedor}", direccion:"${x.direccion}", telefono:"${x.telefono}", ciudad:"${x.ciudad}"},
+				{id:"", nit:"${x.nit}", nombre:"${x.nombre}", direccion:"${x.direccion}", telefono:"${x.telefono}", ciudad:"${x.ciudad}"},
 			</c:forEach>
 		]
 		/*let elementos = [

@@ -23,17 +23,17 @@
 					<td><label class="labelUsuarios" for="cedula">Cédula:</label> </td>
 					<td><input type="text" class="datoUsuarios" value="${olldC}" name="ced" size="42"placeholder="Escriba su cédula sin puntos ni comas" required="required" ></td>
 					<td><label class="labelUsuarios" for="usuario">Teléfono:</label> </td>
-					<td><input type="text" class="datoUsuarios"value="${olldTel}" name="tel" size="40"placeholder="Escriba su teléfono" required="required" ></td>
+					<td><input type="text" class="datoUsuarios"value="${olldN}" name="telefono" size="40"placeholder="Escriba su teléfono" required="required" ></td>
 				</tr>
 				<tr>
 					<td><label class="labelUsuarios" for="nombre">Nombre Completo:</label> </td>
-					<td><input type="text" class="datoUsuarios" value="${olldN}" name="nom_comp" size="42" placeholder="Escriba su nombre completo" required="required"></td>
+					<td><input type="text" class="datoUsuarios" value="${olldE}" name="nom_comp" size="42" placeholder="Escriba su nombre completo" required="required"></td>
 					<td><label class="labelUsuarios" for="password">Correo Electrónico:</label> </td>
-					<td><input type="email" class="datoUsuarios" value="${olldE}" name="correo" size="40" placeholder="Escriba su correo electrónico. Ej: tu@correo.com" required="required"></td>
+					<td><input type="email" class="datoUsuarios" value="${olldU}" name="correo" size="40" placeholder="Escriba su correo electrónico. Ej: tu@correo.com" required="required"></td>
 				</tr>
 				<tr>
 					<td><label class="labelUsuarios" for="correo">Dirección:</label> </td>
-					<td><input type="text" class="datoUsuarios" value="${olldD}" name="direccion" size="42" placeholder="Escriba su dirección" required="required"></td>
+					<td><input type="text" class="datoUsuarios" value="${olldP}" name="direccion" size="42" placeholder="Escriba su dirección" required="required"></td>
 				</tr>
 			</table>
 			<div class="botonesUsuarios">
@@ -68,7 +68,7 @@
     <script>
 		let elementos = [
 			<c:forEach items="${listado}" var="x">
-				{id:"", cedula:"${x.cedula}", nombre:"${x.nombre_usuario}", email:"${x.email_usuario}", telefono:"${x.telefono}", direccion:"${x.direccion}"},
+				{id:"", cedula:"${x.cedula}", nombre:"${x.nombre}", email:"${x.email}", telefono:"${x.telefono}", direccion:"${x.direccion}"},
 			</c:forEach>
 		]
 		/*let elementos = [
