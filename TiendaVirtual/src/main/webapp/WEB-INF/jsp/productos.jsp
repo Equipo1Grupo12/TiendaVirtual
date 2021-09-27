@@ -50,12 +50,7 @@ ${alerta}
 				{id:"", cp:"${x.codigo_producto}", np:"${x.nombre_producto}", nitp:"${x.nit_Proveedor}", pc:"${x.precio_compra}",ic:"${x.iva_compra}",pv:"${x.precio_venta}"},
 			</c:forEach>
 		]
-		/*
-		let elementos = [
-			{id:"", cedula:"${x.cedula}", nombre:"${x.nombre_usuario}", email:"${x.email_usuario}", usuario:"${x.usuario}"},
-			{id:"", cedula:"${x.cedula}", nombre:"${x.nombre_usuario}", email:"${x.email_usuario}", usuario:"${x.usuario}"},
-		]
-		*/
+		
 		let tipo = "producto"
     </script>
 
