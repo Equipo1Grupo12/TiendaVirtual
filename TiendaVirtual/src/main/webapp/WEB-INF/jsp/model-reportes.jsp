@@ -5,7 +5,7 @@
 <head>
 <meta charset="ISO-8859-1">
 <title>Tienda Generica</title>
-<link rel="shortcut icon" type="image/png" href="recursos/iconBot.png">
+<link rel="shortcut icon" type="image/png" href="recursos/t2.png">
 <link rel="stylesheet" href="css/navStyle.css">
 <link rel="stylesheet" href="css/RegisterStyle.css">
 <link href="css/bootstrap.min.css" rel="stylesheet">

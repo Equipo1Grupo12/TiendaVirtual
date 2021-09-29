@@ -5,6 +5,7 @@
 <head>
 <meta charset="UTF-8">
 <title>Tienda Genérica</title>
+<link rel="shortcut icon" type="image/png" href="recursos/t2.png">
 <link href="css/estilos.css" rel="stylesheet">
 </head>
 <body class="bodyIndex">
