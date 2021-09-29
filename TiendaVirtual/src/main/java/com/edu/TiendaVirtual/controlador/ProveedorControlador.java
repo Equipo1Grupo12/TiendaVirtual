@@ -27,6 +27,7 @@ public class ProveedorControlador {
 	public String getProveedores(Model model){
 		List<Proveedor> proveedores = proveedoresDAO.findAll();
 		model.addAttribute("listado", proveedores);
+		model.addAttribute("btncrear", "<button type=\"submit\" id=\"btn botonCrear\" class=\"btn btnUsuarios\" name=\"crear\">Crear</button>");
 		return "proveedores";
 	}
 	
@@ -65,6 +66,7 @@ public class ProveedorControlador {
 		int auxNit = Integer.parseInt(nit);
 		Optional<Proveedor> optionaluser= proveedoresDAO.findById(auxNit);
 		Proveedor oldUser = optionaluser.get();
+		getProveedores(model);
 		model.addAttribute("olldC", oldUser.getNit());
 		model.addAttribute("olldN", oldUser.getTelefono());
 		model.addAttribute("olldE", oldUser.getNombre());
@@ -72,7 +74,7 @@ public class ProveedorControlador {
 		model.addAttribute("olldP", oldUser.getDireccion());
 		model.addAttribute("btnact", "<button type=\"submit\"class=\"btn btn-success btn-sm\"  name=\"crear\">Actualizar cliente</button>");
 		model.addAttribute("btncancel", "<button type=\"submit\" class=\"btn btn-danger btn-sm\"  name=\"crear\">Cancelar</button>");
-		getProveedores(model);
+		model.addAttribute("btncrear", "");
 		return "proveedores";
 	}	
 	

@@ -37,7 +37,7 @@
 				</tr>
 			</table>
 			<div class="botonesUsuarios">
-				<button type="submit" id="btn botonCrear" class="btn btnUsuarios" name="crear">Crear</button>
+				${btncrear}
                 ${btnact}
                 <!-- <button type="submit" class="btn btn-warning"  name="crear">Actualizar usuario</button> -->
                 ${btncancel}

@@ -28,11 +28,13 @@ public class UsuarioControlador {
 	public String getUsuarios(Model model){
 		List<Usuario> usuarios = usuariosDAO.findAll();
 		model.addAttribute("listado", usuarios);
+		model.addAttribute("btncrear", "<button type=\"submit\" id=\"btn botonCrear\" class=\"btn btnUsuarios\" name=\"crear\">Crear</button>");
 		return "usuarios";
 	}
 	
 	@PostMapping
 	public String crearUsuario(HttpServletRequest request,Model model) {
+		//System.out.println(request);
 		int cc = Integer.parseInt(request.getParameter("ced"));
 		Usuario aux = new Usuario();
 		aux.setCedula(cc);
@@ -67,14 +69,15 @@ public class UsuarioControlador {
 		int auxCc = Integer.parseInt(cc);
 		Optional<Usuario> optionaluser= usuariosDAO.findById(auxCc);
 		Usuario oldUser = optionaluser.get();
+		getUsuarios(model);
 		model.addAttribute("olldC", oldUser.getCedula());
 		model.addAttribute("olldN", oldUser.getNombre_usuario());
 		model.addAttribute("olldE", oldUser.getEmail_usuario());
 		model.addAttribute("olldU", oldUser.getUsuario());
 		model.addAttribute("olldP", oldUser.getPassword());
+		model.addAttribute("btncrear", "");
 		model.addAttribute("btnact", "<button type=\"submit\"class=\"btn btn-success btn-sm\"  name=\"crear\">Actualizar usuario</button>");
 		model.addAttribute("btncancel", "<button type=\"submit\" class=\"btn btn-danger btn-sm\"  name=\"crear\">Cancelar</button>");
-		getUsuarios(model);
 		return "usuarios";
 	}
 	

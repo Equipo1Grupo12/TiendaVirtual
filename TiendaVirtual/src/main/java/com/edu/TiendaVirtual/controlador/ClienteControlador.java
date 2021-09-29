@@ -27,6 +27,7 @@ public class ClienteControlador {
 	public String getclientes(Model model){
 		List<Cliente> clientes = clientesDAO.findAll();
 		model.addAttribute("listado", clientes);
+		model.addAttribute("btncrear", "<button type=\"submit\" id=\"btn botonCrear\" class=\"btn btnUsuarios\" name=\"crear\">Crear</button>");
 		return "clientes";
 	}
 	
@@ -65,14 +66,15 @@ public class ClienteControlador {
 		int auxCc = Integer.parseInt(cc);
 		Optional<Cliente> optionaluser= clientesDAO.findById(auxCc);
 		Cliente oldUser = optionaluser.get();
+		getclientes(model);
 		model.addAttribute("olldC", oldUser.getCedula());
 		model.addAttribute("olldN", oldUser.getTelefono());
 		model.addAttribute("olldE", oldUser.getNombre());
 		model.addAttribute("olldU", oldUser.getEmail());
 		model.addAttribute("olldP", oldUser.getDireccion());
+		model.addAttribute("btncrear", "");
 		model.addAttribute("btnact", "<button type=\"submit\"class=\"btn btn-success btn-sm\"  name=\"crear\">Actualizar cliente</button>");
 		model.addAttribute("btncancel", "<button type=\"submit\" class=\"btn btn-danger btn-sm\"  name=\"crear\">Cancelar</button>");
-		getclientes(model);
 		return "clientes";
 	}	
 	
