@@ -1,13 +1,16 @@
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
+<%@ page import="java.util.List"%>
+<%@ page import="org.springframework.ui.Model"%>
 <%@ page language="java" contentType="text/html; charset=ISO-8859-1"
-    pageEncoding="ISO-8859-1"%>
+    pageEncoding="UTF-8"%>
 <!DOCTYPE html>
 <html>
 <head>
-<meta charset="ISO-8859-1">
+<meta charset="UTF-8"">
 <title>Tienda Generica</title>
 <link rel="shortcut icon" type="image/png" href="recursos/t2.png">
-<link rel="stylesheet" href="css/navStyle.css">
-<link rel="stylesheet" href="css/RegisterStyle.css">
+<!-- <link rel="stylesheet" href="css/navStyle.css">
+<link rel="stylesheet" href="css/RegisterStyle.css"> -->
 <link href="css/bootstrap.min.css" rel="stylesheet">
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
 
@@ -52,10 +55,22 @@
 </form>
 
 </div>
-
-
-
-
-
+	<script>
+		let usuario = "${user}"
+		let cedula_usuario = "${user_cc}"
+		let consecutivo_ventas = parseInt("${consecutivo_ventas}")
+		
+		let clientes = [
+			<c:forEach items="${clientes}" var="cliente">
+				{cedula:"${cliente.cedula}", direccion:"${cliente.direccion}", email:"${cliente.email}", nombre:"${cliente.nombre}", telefono:"${cliente.telefono}"},
+			</c:forEach>
+		]
+		let productos = [
+			<c:forEach items="${productos}" var="producto">
+				{codProducto:"${producto.codigo_producto}", producto:"${producto.nombre_producto}", nitProve:"${producto.nit_Proveedor}", precio:"${producto.precio_compra}", iva:"${producto.iva_compra}", venta:"${producto.precio_venta}"},
+			</c:forEach>
+		]
+		console.log(productos)
+	</script>
 </body>
 </html>
