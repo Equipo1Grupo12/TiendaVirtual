@@ -1,0 +1,50 @@
+body {font-family: italic;}
+
+.navbar {
+  width: 98vw;
+  background-color:rgb(192, 185, 221);
+  overflow: auto;
+   border-radius: 0.5vw;
+}
+
+.navbar a {
+  float: left;
+  padding: 0.5vw;
+  color: white;
+  text-decoration: none;
+  font-size: 1.3vw;
+}
+
+.navbar a:hover {
+  background-color:rgba(3, 105, 206,.4);
+}
+
+.active {
+  background-color:rgba(3, 105, 206,.4);
+   border-radius: 0.5vw;
+}
+
+@media screen and (max-width: 500px) {
+  .navbar a {
+    float: none;
+    display: block;
+  }
+}
+
+
+li {
+  float: left;
+}
+
+
+
+li a:hover:not(.active) {
+  background-color:rgba(3, 105, 206,.4);
+
+}
+
+li a.active {
+  color: white;
+  background-color: #ffffff;
+}
+

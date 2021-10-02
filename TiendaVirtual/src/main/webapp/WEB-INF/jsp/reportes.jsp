@@ -84,8 +84,8 @@
 			<tr class="tablas">
 				<td>#</td>
 				<td>${x.cedula}</td>
-	            <td>${x.nombre_cliente}</td>
-	            <td>${x.email_cliente}</td>
+	            <td>${x.nombre}</td>
+	            <td>${x.email}</td>
 	            <td>${x.telefono}</td>
 	            <td>${x.direccion}</td>
 			</tr>
