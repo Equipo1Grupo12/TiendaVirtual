@@ -95,11 +95,11 @@
 	width: 98vw;
 	background: rgb(192, 185, 221);
 	color: black;
-	text-align: center;
-	font-size: 3vw;
+	
+	font-size: 1.8vw;
 }
 .tituloControl{
-	font-size: 3.5vw;
+	font-size: 3vw;
 	color: rgb(3, 56, 96);
 }
 .linkControl{
@@ -125,7 +125,7 @@
 	width: 98vw;
 	height: 89vh;
 	border: none;
-	border-radius: 2vw;
+	border-radius: 0.5vw;
 }
 
 .bodyUsuarios {
@@ -321,3 +321,4 @@
 	margin: 10px;
 	color: rgb(3, 56, 96);
 }
+

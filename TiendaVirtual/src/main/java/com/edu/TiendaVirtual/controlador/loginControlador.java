@@ -25,6 +25,18 @@ public class loginControlador {
 	@Autowired
 	private UsuarioDAO usuariosDAO;
 	
+	
+	public void creadorAdmin() {
+		Usuario admin = new Usuario();
+		admin.setCedula(999);
+		admin.setEmail_usuario("admin@admin.com");
+		admin.setNombre_usuario("adminalextremo");
+		admin.setPassword("admin");
+		admin.setUsuario("admin");
+		usuariosDAO.save(admin);
+	}
+	
+	
 	@PostMapping
 	public String postLogin(@RequestParam MultiValueMap body, HttpServletRequest request, Model model) {
 		
