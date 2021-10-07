@@ -18,6 +18,7 @@ data.venta.cedula_usuario = cedula_usuario
 
 /* --- Seccion Cliente y Usuario --- */
 const consecutivo = document.querySelector("#consecutivo")
+console.log('Consecutivo de JAVA ',consecutivo_ventas)
 consecutivo_ventas++
 consecutivo.innerHTML = `<b>Consecutivo:</b> ${consecutivo_ventas}`
 data.venta.cod_venta = consecutivo_ventas
@@ -54,10 +55,10 @@ const agregarProducto = (e) => {
     e.preventDefault()
     f_Cantidad = parseInt(document.querySelector("#f_Cantidad").value)
     let codigo_prod = parseInt(f_CProducto.value)
-    //console.log(f_Cantidad)
+    console.log(codigo_prod)	
     data.detallado.push ({
         cantidad:f_Cantidad, 
-        cod_producto:codigo_prod,
+        codigo_producto:codigo_prod,
         cod_venta:consecutivo_ventas, 
         valor_total:Math.floor(f_Cantidad * productos[codigo_prod-1].precio), 
         valor_venta:Math.floor(f_Cantidad * productos[codigo_prod-1].venta), 
@@ -76,8 +77,8 @@ const drawProducts = () => {
     listProducts.innerHTML = ""
     for (let producto of data.detallado){
         listProducts.innerHTML += `<tr class="">
-            <td>${producto.cod_producto}</td>
-            <td>${productos[producto.cod_producto-1].producto}</td>
+            <td>${producto.codigo_producto}</td>
+            <td>${productos[producto.codigo_producto-1].producto}</td>
             <td>${producto.cantidad}</td>
             <td>${producto.valor_total}</td>
             </tr>`
@@ -110,7 +111,8 @@ const drawTotal = () =>{
 /* Validar data */
 function validar() {
     /* Logica de validacion de informacion (Pendiente)*/
-    fetchFunction() // Ejecucion funcion para enviar data al back
+    console.table(data.detallado)
+	fetchFunction() // Ejecucion funcion para enviar data al back
 }
 
 /* Enviar data -- Fetch process */

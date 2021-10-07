@@ -42,7 +42,7 @@
 		<br>
 		<br>
 		<br>
-		<button class="btnUsuarios" id="confirmar" onclick="validar()">Confirmar</button>
+		<div class="btnUsuarios" id="confirmar" onclick="validar()">Confirmar</div>
 	</form>
 	<script>
 		//Informacion proveniente de JAVA Clientes y Productos
