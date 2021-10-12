@@ -11,7 +11,7 @@
 <link href="../css/estilos.css" rel="stylesheet">
 </head>
 <body>
-	<form> <!-- .sectionControl -->
+	<form id="form_ventas"> <!-- .sectionControl -->
 		<div class="form-inline" align="center">
 			<label class="labelUsuarios"><b>Cedula cliente</b></label>
 			<select class="inputIndex" id="selectCedulas">
@@ -27,15 +27,17 @@
 			<label class="labelUsuarios"><b>Cantidad</b></label>
 			<input class="inputIndex" type="text" name="" id="f_Cantidad">
 		</div>
-		<table class="tableControl">
-			<thead>
-				<th>Codigo Producto</th>
-				<th>Nombre Producto</th>
-				<th>Cantidad</th>
-				<th>Vlr Total</th>
-			</thead>
-			<tbody id="listProducts"></tbody>
-		</table>
+		<section class="sectionVentas__table">
+			<table class="tableControl"> <!-- tableControl sectionUsuarios__table-->
+				<thead>
+					<th>Codigo Producto</th>
+					<th>Nombre Producto</th>
+					<th>Cantidad</th>
+					<th>Vlr Total</th>
+				</thead>
+				<tbody id="listProducts"></tbody>
+			</table>
+		</section>
 		<button class="btnUsuarios" id="masProductos">+</button>
 		<div id="total_section">
 		</div>

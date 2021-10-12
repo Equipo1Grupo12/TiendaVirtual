@@ -91,13 +91,37 @@
   	flex-direction: column;
   	border-radius: 3vw;
 }
-.tableControl{
-	width: 98vw;
-	background: rgb(192, 185, 221);
-	color: black;
-	
-	font-size: 1.8vw;
+
+#form_ventas{
+	padding: 15px;
 }
+
+.sectionVentas__table {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 100vw;
+	margin-bottom: 10px;
+	font-size: larger;
+}
+
+.tableControl{
+	width: 100vw;
+}
+
+.tableControl th{
+	background:rgb(192, 185, 221);
+	color: white;
+	padding: 8px;
+	font-size: 1em;
+}
+
+.tableControl td{
+	background: #F7F4F436;
+	width: auto;
+	padding: 8px;
+}
+
 .tituloControl{
 	font-size: 3vw;
 	color: rgb(3, 56, 96);
@@ -198,6 +222,12 @@
 
 .botonesUsuarios button{
 	font-size: 2vw;
+}
+
+.btnUsuarios#confirmar{
+	width: 200px;
+  	text-align: center;
+  	vertical-align: middle;
 }
 
 .sectionUsuarios__table {
@@ -320,5 +350,66 @@
 #userSessionMessage {
 	margin: 10px;
 	color: rgb(3, 56, 96);
+}
+
+#total_section *{
+	margin-top: 10px;
+}
+
+
+.modal {
+	position: fixed;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	z-index: 1050;
+	overflow: hidden;
+	display: none;
+}
+
+.modal-content {
+	position: relative;
+	background-color: #fff;
+	-webkit-background-clip: padding-box;
+	background-clip: padding-box;
+	border: 1px solid rgba(0,0,0,0.2);
+	border-radius: 6px;
+	-webkit-box-shadow: 0 3px 9px rgb(0 0 0 / 50%);
+	box-shadow: 0 3px 9px rgb(0 0 0 / 50%);
+	border-top: 1px solid #e5e5e5;
+}
+
+.modal-header {
+    min-height: 16.43px;
+    padding: 15px;
+    border-bottom: 1px solid #e5e5e5;
+}
+
+.modal-body {
+    position: relative;
+    padding: 15px;
+}
+
+.modal-footer {
+    padding: 15px;
+    text-align: right;
+    border-top: 1px solid #e5e5e5;
+}
+
+.table {
+    width: 100%;
+    max-width: 100%;
+    margin-bottom: 20px;
+    background-color: transparent;
+    border-spacing: 0;
+    border-collapse: collapse;
+}
+
+.tablas *{
+	padding: 8px;
+    line-height: 1.42857143;
+    vertical-align: top;
+    text-align: left;
 }
 

@@ -111,7 +111,7 @@ const drawTotal = () =>{
 /* Validar data */
 function validar() {
     /* Logica de validacion de informacion (Pendiente)*/
-    console.table(data.detallado)
+    //console.table(data.detallado)
 	fetchFunction() // Ejecucion funcion para enviar data al back
 }
 
