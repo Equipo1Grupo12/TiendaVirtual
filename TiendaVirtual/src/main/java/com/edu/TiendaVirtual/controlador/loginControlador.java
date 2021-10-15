@@ -56,6 +56,7 @@ public class loginControlador {
 		for (Usuario c_user : usuarios) {
 			if (user.equals(c_user.getUsuario()) && pass.equals(c_user.getPassword())) {
 				HttpSession session = request.getSession(true);
+				session.setAttribute("user_name", c_user.getNombre_usuario());
 				session.setAttribute("user", c_user.getUsuario());
 				session.setAttribute("user_cc", c_user.getCedula());
 				return "menu";

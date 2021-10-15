@@ -8,9 +8,15 @@
 	<title>Productos</title>
 	<link rel="shortcut icon" type="image/png" href="recursos/t2.png">
 	<link href="../css/estilos.css" rel="stylesheet">
+<<<<<<< HEAD
 	<link href="../css/bootstrap.min.css" rel="stylesheet">
 	
 	<!--<link href="css/bootstrap.min.css" rel="stylesheet">
+=======
+	
+	<!--<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+	<link href="css/bootstrap.min.css" rel="stylesheet">
+>>>>>>> branch 'master' of https://github.com/Grupo48Sb02/TiendaVirtual.git
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">-->
 </head>
 <body>
@@ -67,60 +73,60 @@ ${alerta}
 
 <!-- The Modal LISTADO USUARIOS -->
 <div id="modT" class="modal">
-  <!-- Modal content -->
-  <div class="modal-content">
-    <div class="modal-header">
-      <h2>Estructura del archivo.</h2>
-    </div>
-    <div class="modal-body">
-    <div class="  my-custom-scrollbar table-wrapper-scroll-y  table-responsive">
-	<table class="table .table-bordered table-striped" >
-		<thead class="tablas">
-		<tr>
-			<th>NOMBRE DEL DATO</th>
-			<th>TIPO DE DATO</th>
-			<th>LONGITUD</th>
-        </tr>
-        </thead>
-			<tr class="tablas">
-				<td>código_producto</td>
-				<td>BIGINT</td>
-	            <td>20</td>
-			</tr>
-			<tr class="tablas">
-				<td>nombre_producto</td>
-				<td>VARCHAR</td>
-	            <td>50</td>
-			</tr>
-			<tr class="tablas">
-				<td>nitproveedor</td>
-				<td>BIGINT</td>
-	            <td>20</td>
-			</tr>
-			<tr class="tablas">
-				<td>precio_compra</td>
-				<td>DOUBLE</td>
-	            <td>N/A</td>
-			</tr>
-			<tr class="tablas">
-				<td>ivacompra</td>
-				<td>DOUBLE</td>
-	            <td>N/A</td>
-			</tr>
-			<tr class="tablas">
-				<td>precio_venta</td>
-				<td>DOUBLE</td>
-	            <td>N/A</td>
-			</tr>
-	</table>
-	<br>
-	<h3>El formato del archivo debe ser CSV separado por comas (,).</h3>
-</div>
-    </div>
-    <div class="modal-footer">
-    <a href=productos type="submit" class="btn btn-danger" >Salir</a>
-    </div>
-  </div>
+	<!-- Modal content -->
+	 <div class="modal-content">
+	  <div class="modal-header">
+	  	<h2>Estructura del archivo.</h2>
+	  </div>
+	  <div class="modal-body">
+	   <div class="my-custom-scrollbar table-wrapper-scroll-y  table-responsive">
+		<table class="table .table-bordered table-striped" >
+			<thead class="tablas">
+			<tr>
+				<th>NOMBRE DEL DATO</th>
+				<th>TIPO DE DATO</th>
+				<th>LONGITUD</th>
+	        </tr>
+	        </thead>
+				<tr class="tablas">
+					<td>código_producto</td>
+					<td>BIGINT</td>
+		            <td>20</td>
+				</tr>
+				<tr class="tablas">
+					<td>nombre_producto</td>
+					<td>VARCHAR</td>
+		            <td>50</td>
+				</tr>
+				<tr class="tablas">
+					<td>nitproveedor</td>
+					<td>BIGINT</td>
+		            <td>20</td>
+				</tr>
+				<tr class="tablas">
+					<td>precio_compra</td>
+					<td>DOUBLE</td>
+		            <td>N/A</td>
+				</tr>
+				<tr class="tablas">
+					<td>ivacompra</td>
+					<td>DOUBLE</td>
+		            <td>N/A</td>
+				</tr>
+				<tr class="tablas">
+					<td>precio_venta</td>
+					<td>DOUBLE</td>
+		            <td>N/A</td>
+				</tr>
+		</table>
+		<br>
+		<h3>El formato del archivo debe ser CSV separado por comas (,).</h3>
+	</div>
+	  </div>
+	  <div class="modal-footer">
+	  	<a href=productos type="submit" class="btn btn-danger" >Salir</a>
+	  </div>
+	 </div>
 </div>
 
 <script >
@@ -138,9 +144,5 @@ ${alerta}
 		  }
 		}
 </script>
-
-
-
-
 </body>
 </html>

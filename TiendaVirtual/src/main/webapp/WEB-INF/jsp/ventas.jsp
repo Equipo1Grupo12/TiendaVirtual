@@ -1,5 +1,7 @@
-<%@ page language="java" contentType="text/html; charset=UTF-8"
-    pageEncoding="UTF-8"%>
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
+<%@ page import="java.util.List"%>
+<%@ page import="org.springframework.ui.Model"%>
+<%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
 <!DOCTYPE html>
 <html>
 <head>
@@ -9,7 +11,7 @@
 <link href="../css/estilos.css" rel="stylesheet">
 </head>
 <body>
-	<form method="post" .sectionControl>
+	<form id="form_ventas"> <!-- .sectionControl -->
 		<div class="form-inline" align="center">
 			<label class="labelUsuarios"><b>Cedula cliente</b></label>
 			<select class="inputIndex" id="selectCedulas">
@@ -25,23 +27,26 @@
 			<label class="labelUsuarios"><b>Cantidad</b></label>
 			<input class="inputIndex" type="text" name="" id="f_Cantidad">
 		</div>
-		<table class="tableControl">
-			<thead>
-				<th>Codigo Producto</th>
-				<th>Nombre Producto</th>
-				<th>Cantidad</th>
-				<th>Vlr Total</th>
-			</thead>
-			<tbody id="listProducts"></tbody>
-		</table>
+		<section class="sectionVentas__table">
+			<table class="tableControl"> <!-- tableControl sectionUsuarios__table-->
+				<thead>
+					<th>Codigo Producto</th>
+					<th>Nombre Producto</th>
+					<th>Cantidad</th>
+					<th>Vlr Total</th>
+				</thead>
+				<tbody id="listProducts"></tbody>
+			</table>
+		</section>
 		<button class="btnUsuarios" id="masProductos">+</button>
 		<div id="total_section">
 		</div>
 		<br>
 		<br>
 		<br>
-		<button class="btnUsuarios" id="confirmar" onclick="validar()">Confirmar</button>
+		<div class="btnUsuarios" id="confirmar" onclick="validar()">Confirmar</div>
 	</form>
+<<<<<<< HEAD
 	<<script src="../js/entradas.js">
 		/*
 		 * Informacion proveniente de JAVA Clientes y Productos
@@ -54,18 +59,26 @@
 		 * <c:forEach items="${clienteJAVA}" var="x">
 		 *		{cedula:"${x.cedula}", direccion:"${x.direccion_cliente}", email:"${x.email_cliente}", nombre:"${x.
 		 * 		nombre_cliente}, telefono:"${x.telefono_cliente}"},
+=======
+	<script>
+		//Informacion proveniente de JAVA Clientes y Productos
+		//Data necesaria 
+		let cedula_usuario = "${user_cc}"
+		let consecutivo_ventas = parseInt("${consecutivo_ventas}")
+		
+		let clientes = [
+			<c:forEach items="${clientes}" var="x">
+				{id:"", cedula:"${x.cedula}", nombre:"${x.nombre}", email:"${x.email}", telefono:"${x.telefono}", direccion:"${x.direccion}"},
+>>>>>>> branch 'master' of https://github.com/Grupo48Sb02/TiendaVirtual.git
 			</c:forEach>
-		 * ]
-
-		 *  let productos = [
-		 *		{codProducto:"1", producto:"Melocotones", nitProve:"1", precio:"25505", iva:"19", venta:'30351'},
-		 *		{codProducto:"2", producto:"Manzanas", nitProve:"3", precio:"18108", iva:"19", venta:'21549'},
-		 * 		{codProducto:"3", producto:"Plátanos", nitProve:"4", precio:"29681", iva:"19", venta:'35320'},
-		 *		{codProducto:"4", producto:"Lechuga", nitProve:"3", precio:"29788", iva:"19", venta:'35448'},
-		 *		{codProducto:"5", producto:"Tomates", nitProve:"1", precio:"12739", iva:"19", venta:'15159'},
-		 * 		{codProducto:"6", producto:"Calabaza", nitProve:"1", precio:"21315", iva:"19", venta:'25365'},
-		 *  ]
-		*/
+		]
+		
+		let productos = [
+			<c:forEach items="${productos}" var="x">
+				{codProducto:"${x.codigo_producto}", producto:"${x.nombre_producto}", nitProve:"${x.nit_Proveedor}", precio:"${x.precio_compra}", iva:"${x.iva_compra}", venta:'${x.precio_venta}'},
+			</c:forEach>
+		]
+		
     </script>
     <script src="../js/rest.js"></script>
 </body>

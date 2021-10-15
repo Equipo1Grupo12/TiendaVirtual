@@ -44,9 +44,10 @@ public class ventasControlador {
 		return "ventas";
 	}
 	
-	@PostMapping("/prueba")
+	@PostMapping()
 	@ResponseBody
 	public void salvarVenta(@RequestBody String jsonString) {
+		System.out.println("Probando ejecucion");
 		Gson gson = new Gson();
 		VentaJson infoVenta = gson.fromJson(jsonString, VentaJson.class);
 		ventaGeneralDao.save(infoVenta.getVenta());
