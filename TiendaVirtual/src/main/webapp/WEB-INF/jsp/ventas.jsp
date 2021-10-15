@@ -42,7 +42,7 @@
 		<br>
 		<button class="btnUsuarios" id="confirmar" onclick="validar()">Confirmar</button>
 	</form>
-	<!--<script src="../js/entradas.js">
+	<<script src="../js/entradas.js">
 		/*
 		 * Informacion proveniente de JAVA Clientes y Productos
 		 * Data necesaria 
@@ -67,6 +67,6 @@
 		 *  ]
 		*/
     </script>
-    <script src="../js/rest.js"></script>-->
+    <script src="../js/rest.js"></script>
 </body>
 </html>

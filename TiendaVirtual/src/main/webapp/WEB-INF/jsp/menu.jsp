@@ -7,10 +7,10 @@
 <title>Tienda Genérica</title>
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <link rel="shortcut icon" type="image/png" href="recursos/t2.png">
-<link href="css/estilos.css" rel="stylesheet">
+<link href="../css/estilos.css" rel="stylesheet">
 <link rel="stylesheet" href="css/navStyle.css">
 </head>
-<body class="bodyControl">
+<body class="">
 	<section  class="sectionControl">
 		<br>
 		<div  class="divControl">
